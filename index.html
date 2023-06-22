@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chhotu`s portfolio - web dev.</title>
     <link rel="shortcut icon" href="./Favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./style.css">
 
+    <!--======================our css file - style.cs=====================-->
+    <link rel="stylesheet" href="./style.css">
 
     <!-- ===================aos css cdn=================== -->
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
@@ -26,11 +27,11 @@
 
 <body>
     <header class="header bgc-darkblue d-flex-sa color-white ">
-        <h1 class="Logo" data-aos="fade-left">Chhotu`s <span class="color-darkpink">Portfolio</span></h1>
+        <h1 class="Logo">Chhotu`s <span class="color-darkpink">Portfolio</span></h1>
         <input type="checkbox" id="CheckBox" />
 
         <nav class="navbar">
-            <ul class="unorder-list d-flex-sa ">
+            <ul class="unorder-list d-flex-sa">
                 <li class="list-item "><a class="color-white" href="#Home">Home</a></li>
                 <li class="list-item "><a class="color-white" href="#About">About</a></li>
                 <li class="list-item "><a class="color-white" href="#Project">Project</a></li>
@@ -39,13 +40,48 @@
             </ul>
         </nav>
 
-        <!-- for Responsive  -->
+        <!-- for Responsive - icon -->
         <label for="CheckBox" id="Fa-Bar">
             <i class="fa-solid fa-bars" onclick="ChangeIcon()"></i>
         </label>
+
     </header>
+
+    <main>
+
+        <div class="home-section d-flex-sa bgc-naviblue color-white" id="Home">
+
+            <div class="content ">
+                <p>Hii,</p>
+                <h2>I am <span class="color-darkpink">chhotu</span></h2>
+                <p>I am very passionate for <br>
+                    <span class="color-darkpink"> web development</span> as <br> well as
+                    <span id="typeWrite" class="color-darkpink">Programming</span>
+                </p>
+
+            </div>
+
+            <div class="image">
+                <img src="./Assets/Chhotu.png" alt="C Kumar - web Dev.">
+            </div>
+
+        </div>
+
+    </main>
 </body>
 
+<!--======================our JS file - script.js=====================-->
 <script src="./script.js"></script>
+
+
+<!--===================aos js cdn================-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 500,
+        easing: "ease-in-sine",
+    });
+</script>
 
 </html>

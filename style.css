@@ -16,14 +16,11 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-
-    /* font-weight: 200; */
     font-weight: 400;
-    /* font-weight: 600; */
 }
 
 :root {
-    --MainBgc: rgb(0, 0, 33);
+    --MainBgc: rgb(4, 4, 48);
     --HeaderBgc: rgb(11, 1, 74);
     --btnBgc: rgb(31, 63, 159);
 
@@ -94,6 +91,8 @@ a {
     color: var(--darkpink)
 }
 
+
+
 /*
 .
 .=======================SEPARATE CSS======================
@@ -131,6 +130,44 @@ a {
 }
 
 
+/* .content h2::first-letter {
+    initial-letter: 2;
+    padding-right: .5rem;
+} */
+
+.home-section {
+    height: 92vh;
+}
+
+.content,
+.content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.content span {
+    font-size: 2rem;
+}
+
+.home-section .image img {
+    height: 300px;
+    box-shadow: -5px -5px 2px var(--darkpink), 5px 5px 2px yellow;
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+#typeWrite {
+    border-right: 1px solid var(--darkpink);
+    width: fit-content;
+    font-size: 1.5rem;
+    /* color: blueviolet; */
+}
+
+/* .home-section .image img:hover {
+    box-shadow: -5px -5px 2px yellow, 5px 5px 2px var(--darkpink);
+
+} */
 
 /*=======================Responsite Design======================*/
 
@@ -170,5 +207,15 @@ a {
         top: 3rem;
         background-color: var(--HeaderBgc);
 
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .home-section {
+        flex-direction: column;
+        height: fit-content;
+        padding: 2rem 0;
+        gap: 2rem;
     }
 }
