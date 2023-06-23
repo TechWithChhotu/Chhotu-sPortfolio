@@ -55,6 +55,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .d-flex-sa {
@@ -68,6 +69,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* background color class */
 .bgc-naviblue {
@@ -89,6 +91,51 @@ a {
 
 .color-darkpink {
     color: var(--darkpink)
+}
+
+/* for evey button */
+
+.btn a {
+    color: white;
+    font-size: 16px;
+}
+
+.btn {
+    width: 0;
+    background-color: var(--darkpink);
+    height: 40px;
+    transition: 1s;
+    position: relative;
+
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    width: 100%;
+}
+
+#btn-inner {
+
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: transparent;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--darkpink);
+    border-radius: 5px;
+}
+
+.btn-outer {
+    width: 200px;
+    text-align: start;
+    height: fit-content;
+    border-radius: 5px;
+
+    overflow: hidden;
 }
 
 
@@ -168,6 +215,77 @@ a {
     box-shadow: -5px -5px 2px yellow, 5px 5px 2px var(--darkpink);
 
 } */
+
+
+/*=======================About======================*/
+.about-section {
+    padding-bottom: 2rem;
+}
+
+.comman-heading {
+    text-align: center;
+    border-bottom: 2px solid var(--darkpink);
+
+    width: fit-content;
+
+}
+
+.about-left {
+    width: 30%;
+}
+
+#about-left-image {
+    width: 90%;
+}
+
+.about-right {
+    width: 60%;
+}
+
+.skills {
+    margin-top: 1em;
+}
+
+.skill {
+    width: 80%;
+    text-align: center;
+    margin: 0.5rem;
+    border: 1px solid var(--darkpink);
+    margin-left: 3rem;
+
+}
+
+.skill-inner {
+    color: white;
+    background-color: var(--darkpink);
+}
+
+.html,
+.css {
+    width: 99%;
+}
+
+.js,
+.bootstrap {
+    width: 90%;
+}
+
+.c-cpp {
+    width: 95%;
+}
+
+.java {
+    width: 80%;
+}
+
+.dsa {
+    width: 75%;
+}
+
+.education li {
+    list-style: circle;
+    margin-left: 3rem;
+}
 
 /*=======================Responsite Design======================*/
 

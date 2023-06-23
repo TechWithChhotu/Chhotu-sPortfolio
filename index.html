@@ -10,9 +10,6 @@
     <!--======================our css file - style.cs=====================-->
     <link rel="stylesheet" href="./style.css">
 
-    <!-- ===================aos css cdn=================== -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
-
     <!--======================Font awesome cnd=====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -26,6 +23,7 @@
 </head>
 
 <body>
+
     <header class="header bgc-darkblue d-flex-sa color-white ">
         <h1 class="Logo">Chhotu`s <span class="color-darkpink">Portfolio</span></h1>
         <input type="checkbox" id="CheckBox" />
@@ -49,7 +47,7 @@
 
     <main>
 
-        <div class="home-section d-flex-sa bgc-naviblue color-white" id="Home">
+        <section class="home-section d-flex-sa bgc-naviblue color-white" id="Home">
 
             <div class="content ">
                 <p>Hii,</p>
@@ -65,23 +63,80 @@
                 <img src="./Assets/Chhotu.png" alt="C Kumar - web Dev.">
             </div>
 
-        </div>
+        </section>
+
+        <section class="about-section d-flex-sa bgc-naviblue color-white" id="About">
+
+            <div class="about-left d-flex">
+                <img src="./Assets/Programmer.png" alt="" id="about-left-image">
+
+                <div class="btn-outer">
+                    <button class="btn">
+                        <a href="https://drive.google.com/file/d/1nksoxLoN615AzGPAG0c6pjYPQVQjbWKT/view?usp=drive_link"
+                            download id="btn-inner">Download Resume</a>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="about-right">
+                <h2 class="comman-heading"> About Me </h2>
+                <article>
+                    <p>
+                        I am a passionate web development with a strong command of programming languages, data
+                        structures, and algorithms. I am currently pursuing a Bachelor of Computer Applications and have
+                        experience working on a variety of web development projects. I am also proficient in desktop
+                        application development using Java, AWT, and Spring. I am a team player and have a strong work
+                        ethic. I am always looking for new challenges and opportunities to learn and grow. I am
+                        confident that I would be a valuable asset to your team.
+                    </p>
+                    <h3>Skills:</h3>
+                    <ul class="skills">
+                        <li class="skill ">
+                            <p class="skill-inner html">HTML5</p>
+                        </li>
+
+                        <li class="skill ">
+                            <p class="skill-inner css">CSS</p>
+                        </li>
+
+                        <li class="skill ">
+                            <p class="skill-inner c-cpp">c/c++</p>
+                        </li>
+
+                        <li class="skill ">
+                            <p class="skill-inner js">JavaScript</p>
+                        </li>
+
+                        <li class="skill ">
+                            <p class="skill-inner bootstrap">Bootstrap</p>
+                        </li>
+
+                        <li class="skill ">
+                            <p class="skill-inner java">Java</p>
+                        </li>
+
+                        <li class="skill ">
+                            <p class="skill-inner dsa">DSA</p>
+                        </li>
+
+                    </ul>
+                    <h3>Education:</h3>
+                    <ul class="education">
+                        <li>intermediate in Science (ISC) [State Board/+2 High School Sirari] </li>
+                        <li>Bachelor of Computer Applications (BCA) [Munger University/RD College]</li>
+                        <li>Full Stack Web Development [PwSkills]</li>
+                        <li>A Job Ready Bootcamp using C++,DSA & IOT [inouron]</li>
+                    </ul>
+                </article>
+            </div>
+
+        </section>
 
     </main>
 </body>
 
 <!--======================our JS file - script.js=====================-->
 <script src="./script.js"></script>
-
-
-<!--===================aos js cdn================-->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        offset: 200,
-        duration: 500,
-        easing: "ease-in-sine",
-    });
-</script>
 
 </html>
