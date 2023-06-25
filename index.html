@@ -4,139 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chhotu`s portfolio - web dev.</title>
-    <link rel="shortcut icon" href="./Favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./Favicon.png" type="image/x-icon">
+    <title>chhotu`s portfolio</title>
 
-    <!--======================our css file - style.cs=====================-->
+    <!--======================our CSS file=====================-->
     <link rel="stylesheet" href="./style.css">
 
-    <!--======================Font awesome cnd=====================-->
+    <!--======================Google fonts=====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+    <!--======================Font awesome CDN=====================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--======================Google Fonts - Poppins=====================-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
 
 </head>
 
 <body>
+    <main class="main-section">
 
-    <header class="header bgc-darkblue d-flex-sa color-white ">
-        <h1 class="Logo">Chhotu`s <span class="color-darkpink">Portfolio</span></h1>
-        <input type="checkbox" id="CheckBox" />
+        <!--======================Aside-Start=====================-->
+        <aside class="aside">
 
-        <nav class="navbar">
-            <ul class="unorder-list d-flex-sa">
-                <li class="list-item "><a class="color-white" href="#Home">Home</a></li>
-                <li class="list-item "><a class="color-white" href="#About">About</a></li>
-                <li class="list-item "><a class="color-white" href="#Project">Project</a></li>
-                <li class="list-item "><a class="color-white" href="#Services">Services</a></li>
-                <li class="list-item "><a class="color-white" href="#Contact">Contact</a></li>
+            <div class="logo">
+                <div class="conic-border"><a href="#Home"><span>C</span>hhotu`s portfoli<span>o</span></a></div>
+            </div>
+
+            <ul class="aside-navbar">
+                <li><a href="#home" class="home nav-link active"><i class="fa fa-house"></i> Home</a></li>
+                <li><a href="#about" class=" about nav-link"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#project" class="project nav-link"><i class="fa fa-briefcase"></i> Project</a></li>
+                <li><a href="#services" class="services nav-link"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="#contact" class="contact nav-link"> <i class="fa fa-comment"></i> Contact</a></li>
             </ul>
-        </nav>
 
-        <!-- for Responsive - icon -->
-        <label for="CheckBox" id="Fa-Bar">
-            <i class="fa-solid fa-bars" onclick="ChangeIcon()"></i>
-        </label>
+        </aside>
+        <!--======================Aside-End=====================-->
 
-    </header>
+        <section class="main-container">
 
-    <main>
+            <!--======================Home Page start=====================-->
+            <section class="home page current">
 
-        <section class="home-section d-flex-sa bgc-naviblue color-white" id="Home">
+                <h2 class="section-heading"><span class="section-heading-inner">Home</span></h2>
+                <div class="home-inner">
 
-            <div class="content ">
-                <p>Hii,</p>
-                <h2>I am <span class="color-darkpink">chhotu</span></h2>
-                <p>I am very passionate for <br>
-                    <span class="color-darkpink"> web development</span> as <br> well as
-                    <span id="typeWrite" class="color-darkpink">Programming</span>
-                </p>
+                    <div class="home-left">
+                        <p>Hello,</p>
+                        <p>My name is <span>Chhotu</span></p>
+                        <p>I am very passionate for </p>
+                        <h2><span>Web development</span> as</h2>
+                        <p>Well as <span class="wrap"></span></p>
+                    </div>
 
-            </div>
+                    <div class="home-right">
+                        <div class="home-right-inner">
+                            <div class="conic-border"><img src="./Assets/Chhotu.png" alt="" id="home-right-img"></div>
+                        </div>
+                    </div>
 
-            <div class="image">
-                <img src="./Assets/Chhotu.png" alt="C Kumar - web Dev.">
-            </div>
-
-        </section>
-
-        <section class="about-section d-flex-sa bgc-naviblue color-white" id="About">
-
-            <div class="about-left d-flex">
-                <img src="./Assets/Programmer.png" alt="" id="about-left-image">
-
-                <div class="btn-outer">
-                    <button class="btn">
-                        <a href="https://drive.google.com/file/d/1nksoxLoN615AzGPAG0c6pjYPQVQjbWKT/view?usp=drive_link"
-                            download id="btn-inner">Download Resume</a>
-                    </button>
                 </div>
+            </section>
+            <!--======================Home Page end=====================-->
 
-            </div>
+            <!--======================About Page start=====================-->
+            <section class="about page current">
+                <h2 class="section-heading"><span class="section-heading-inner">About</span></h2>
+            </section>
+            <!--======================About Page end=====================-->
 
-            <div class="about-right">
-                <h2 class="comman-heading"> About Me </h2>
-                <article>
-                    <p>
-                        I am a passionate web development with a strong command of programming languages, data
-                        structures, and algorithms. I am currently pursuing a Bachelor of Computer Applications and have
-                        experience working on a variety of web development projects. I am also proficient in desktop
-                        application development using Java, AWT, and Spring. I am a team player and have a strong work
-                        ethic. I am always looking for new challenges and opportunities to learn and grow. I am
-                        confident that I would be a valuable asset to your team.
-                    </p>
-                    <h3>Skills:</h3>
-                    <ul class="skills">
-                        <li class="skill ">
-                            <p class="skill-inner html">HTML5</p>
-                        </li>
+            <!--======================Project Page start=====================-->
+            <section class="project page current">
+                <h2 class="section-heading"><span class="section-heading-inner">Project</span></h2>
+            </section>
+            <!--======================Project Page end=====================-->
 
-                        <li class="skill ">
-                            <p class="skill-inner css">CSS</p>
-                        </li>
+            <!--======================Services Page start=====================-->
+            <section class="services page current">
+                <h2 class="section-heading"><span class="section-heading-inner">Services</span></h2>
+            </section>
+            <!--======================Services Page end=====================-->
 
-                        <li class="skill ">
-                            <p class="skill-inner c-cpp">c/c++</p>
-                        </li>
-
-                        <li class="skill ">
-                            <p class="skill-inner js">JavaScript</p>
-                        </li>
-
-                        <li class="skill ">
-                            <p class="skill-inner bootstrap">Bootstrap</p>
-                        </li>
-
-                        <li class="skill ">
-                            <p class="skill-inner java">Java</p>
-                        </li>
-
-                        <li class="skill ">
-                            <p class="skill-inner dsa">DSA</p>
-                        </li>
-
-                    </ul>
-                    <h3>Education:</h3>
-                    <ul class="education">
-                        <li>intermediate in Science (ISC) [State Board/+2 High School Sirari] </li>
-                        <li>Bachelor of Computer Applications (BCA) [Munger University/RD College]</li>
-                        <li>Full Stack Web Development [PwSkills]</li>
-                        <li>A Job Ready Bootcamp using C++,DSA & IOT [inouron]</li>
-                    </ul>
-                </article>
-            </div>
+            <!--======================Contact Page start=====================-->
+            <section class="contact page current">
+                <h2 class="section-heading"><span class="section-heading-inner">Contact</span></h2>
+            </section>
+            <!--======================Contact Page end=====================-->
 
         </section>
 
     </main>
-</body>
 
-<!--======================our JS file - script.js=====================-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".wrap", {
+            strings: ["Programming", "Android Dev.", "Desk. app. dev.", "SEO"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+</body>
+<!--======================Our Script file=====================-->
 <script src="./script.js"></script>
+<!-- typed js cdn -->
+
+
 
 </html>

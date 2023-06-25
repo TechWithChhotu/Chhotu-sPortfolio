@@ -8,45 +8,78 @@ function ChangeIcon() {
     }
 }
 
-/*=======================Type Writer Effect========================*/
+/*=======================Navbar active ========================*/
+
+// const navLinks = document.querySelectorAll('.nav-link');
 
 
+// function setActiveLink() {
+//     navLinks.forEach(link => {
+//         link.classList.remove('active');
+//     });
 
-let Skills = ["Android Dev.", "DesApp Dev.", "SEO", "Programming"]
-const typeWriter = document.querySelector("#typeWrite");
-
-function typeWriteEffects() {
-    let i = 0, j = 0, k = 0;
-
-    let delay = 5000;//initial delay 1s
-
-    const WordIterator = setInterval(() => {
-        let string = Skills[i];
-
-        // console.log(string);
-
-        typeCharacter(string);
-        typeWriter.innerHTML = "";
-
-        i === 3 ? i = 0 : i++;
-    }, delay);
-
-}
-
-typeWriteEffects();
+//     this.classList.add('active');
+//     console.log(this.classList[0]);
+//     if (this.classList[0] === "home") {
+//         console.log("This is home tag");
+//     }
 
 
-function typeCharacter(string) {
-    let i = 0;
-    const characterTyper = setInterval(() => {
-        console.log(string[i]);
-        typeWriter.innerHTML += string[i];
-        i++;
-        if (i === string.length) {
-            i = 0;
-            clearInterval(characterTyper);
+//     // console.log(this.classList[1]);
+//     // console.log(this.classList[2]);
+
+
+// }
+
+// navLinks.forEach(link => {
+//     link.addEventListener('click', setActiveLink);
+// });
+
+const navLinks = document.querySelectorAll('.nav-link');
+const page = document.querySelectorAll('.page');
+
+function setActiveLink() {
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    this.classList.add('active');
+
+    console.log(this.classList);
+
+    // <===============for page sliding==============>
+    for (let i = 0; i < page.length; i++) {
+
+        if (this.classList[0] === "home") {
+            slidePage(0);
         }
-    }, 175)
-
+        else if (this.classList[0] === "about") {
+            slidePage(1);
+        } else if (this.classList[0] === "project") {
+            slidePage(2);
+        } else if (this.classList[0] === "services") {
+            slidePage(3);
+        } else {
+            slidePage(4);
+        }
+    }
 }
 
+navLinks.forEach(link => {
+    link.addEventListener('click', setActiveLink);
+});
+
+/*=======================Slider========================*/
+const slides = document.querySelectorAll(".page");
+var counter = 0;
+slides.forEach((slide, index) => {
+    slide.style.left = `${index * 100}%`;
+});
+
+const slidePage = (pageNumber) => {
+    slides.forEach((slide) => {
+        // slide.style.transform = `translateX(-${counter * 100}%)`
+        slide.style.transform = `translateX(-${pageNumber * 100}%)`
+
+    })
+}
