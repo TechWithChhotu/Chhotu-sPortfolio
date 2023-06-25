@@ -21,6 +21,8 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- ===================aos css cdn=================== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
 </head>
 
@@ -30,11 +32,11 @@
         <!--======================Aside-Start=====================-->
         <aside class="aside">
 
-            <div class="logo">
+            <div class="logo" data-aos="fade-down">
                 <div class="conic-border"><a href="#Home"><span>C</span>hhotu`s portfoli<span>o</span></a></div>
             </div>
 
-            <ul class="aside-navbar">
+            <ul class="aside-navbar" data-aos="fade-up">
                 <li><a href="#home" class="home nav-link active"><i class="fa fa-house"></i> Home</a></li>
                 <li><a href="#about" class=" about nav-link"><i class="fa fa-user"></i> About</a></li>
                 <li><a href="#project" class="project nav-link"><i class="fa fa-briefcase"></i> Project</a></li>
@@ -50,10 +52,10 @@
             <!--======================Home Page start=====================-->
             <section class="home page current">
 
-                <h2 class="section-heading"><span class="section-heading-inner">Home</span></h2>
+                <h2 class="section-heading" data-aos="zoom-in"><span class="section-heading-inner">Home</span></h2>
                 <div class="home-inner">
 
-                    <div class="home-left">
+                    <div class="home-left" data-aos="fade-left">
                         <p>Hello,</p>
                         <p>My name is <span>Chhotu</span></p>
                         <p>I am very passionate for </p>
@@ -62,7 +64,7 @@
                     </div>
 
                     <div class="home-right">
-                        <div class="home-right-inner">
+                        <div class="home-right-inner" data-aos="fade-right">
                             <div class="conic-border"><img src="./Assets/Chhotu.png" alt="" id="home-right-img"></div>
                         </div>
                     </div>
@@ -73,46 +75,74 @@
 
             <!--======================About Page start=====================-->
             <section class="about page current">
-                <h2 class="section-heading"><span class="section-heading-inner">About</span></h2>
+                <h2 class="section-heading" data-aos="zoom-in"><span class="section-heading-inner">About</span></h2>
             </section>
             <!--======================About Page end=====================-->
 
             <!--======================Project Page start=====================-->
             <section class="project page current">
-                <h2 class="section-heading"><span class="section-heading-inner">Project</span></h2>
+                <h2 class="section-heading" data-aos="zoom-in"><span class="section-heading-inner">Project</span></h2>
             </section>
             <!--======================Project Page end=====================-->
 
             <!--======================Services Page start=====================-->
             <section class="services page current">
-                <h2 class="section-heading"><span class="section-heading-inner">Services</span></h2>
+                <h2 class="section-heading" data-aos="zoom-in"><span class="section-heading-inner">Services</span></h2>
             </section>
             <!--======================Services Page end=====================-->
 
             <!--======================Contact Page start=====================-->
             <section class="contact page current">
-                <h2 class="section-heading"><span class="section-heading-inner">Contact</span></h2>
+                <h2 class="section-heading" data-aos="zoom-in"><span class="section-heading-inner">Contact</span></h2>
             </section>
             <!--======================Contact Page end=====================-->
 
         </section>
+        <div class="colorsTheam">
+            <div class="theam">
+                <button id="colorTheam" title="color theam"><i class="fa fa-palette"></i></button>
+                <button onclick="changeModeIcon()" id="bgctheam" title="bgc theam"> <i class="fa fa-moon"></i></button>
+            </div>
+            <div class="colors" style="display: none">
+                <div class="color dark-pink" onclick="darkPinkColor()">
+                </div>
 
+                <div class="color red" id="Red" onclick="redColor()">
+                </div>
+
+                <div class="color orange" onclick="orangeColor()">
+                </div>
+                <div class="color green" onclick="greenColor()">
+                </div>
+            </div>
+        </div>
     </main>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".wrap", {
-            strings: ["Programming", "Android Dev.", "Desk. app. dev.", "SEO"],
-            typeSpeed: 100,
-            backSpeed: 100,
-            loop: true,
-        });
-    </script>
+
 </body>
 <!--======================Our Script file=====================-->
 <script src="./script.js"></script>
-<!-- typed js cdn -->
+
+<!--======================type.js cnd=====================-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".wrap", {
+        strings: ["Programming", "Android Dev.", "Desk. app. dev.", "SEO"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+    });
+</script>
 
 
+<!--===================aos js cdn================-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 500,
+        easing: "ease-in-sine",
+    });
+</script>
 
 </html>

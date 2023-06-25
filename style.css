@@ -19,19 +19,24 @@ body {
 
 :root {
     /*<=========Theam Color========>*/
-    --primaryColor: #1890ff;
-    --dark-orange: #f66b04;
-    --dark-pink: #ff0084;
-    --red: #ff0000;
+    --primary-color: #1890ff;
+    /* royal blue */
+    --secondry-color: #ff0084;
+    /*dark-orange*/
+    --ternary-color: #ff0084;
+    /* dark-pink */
+    --fourth-color: #2ddb2d;
+    /* light green */
+    --fifth-color: rgb(255, 0, 0);
+
     --yellow: #ffd700;
-    --green: #2ddb2d;
-    --text-color-white: white;
+    --text-color: white;
 
     /*<=========BCG========>*/
     --bgc-dark-main: #151515;
-    --bgc-light-main: #f3f4fd;
-
     --bgc-dark-asid: #1d1d1d;
+
+    --bgc-light-main: #f3f4fd;
     --bgc-light-asid: #fdfbff;
 
 }
@@ -58,7 +63,7 @@ a {
     border-top: 3px solid transparent;
     border-right: 3px solid transparent;
     transition: all .8s ease;
-    border-color: #f66b04;
+    border-color: var(--secondry-color);
 
 }
 
@@ -83,7 +88,7 @@ a {
     font-weight: 400;
     font-size: 1.5rem;
     font-family: 'Pacifico', cursive;
-    color: var(--dark-orange);
+    color: var(--secondry-color);
 }
 
 .section-heading-inner::after,
@@ -93,7 +98,7 @@ a {
     height: 0;
     box-sizing: border-box;
     position: absolute;
-    border-bottom: 3px solid var(--green);
+    border-bottom: 3px solid var(--fourth-color);
     bottom: -5px;
     left: 0;
 }
@@ -127,7 +132,7 @@ a {
 }
 
 .aside .logo a {
-    color: var(--dark-orange);
+    color: var(--secondry-color);
     font-weight: 700;
     font-size: 20px;
     padding: 0 1rem;
@@ -150,7 +155,7 @@ a {
 .aside .logo a span {
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
-    color: var(--dark-pink);
+    /* color: var(--ternary-color); */
 }
 
 
@@ -166,12 +171,16 @@ a {
 }
 
 .aside-navbar li a {
-    color: var(--text-color-white);
+    color: var(--text-color);
 }
 
 .nav-link.active {
-    color: var(--dark-orange);
-    /* border-bottom: 1px solid var(--green); */
+    color: var(--secondry-color);
+    /* border-bottom: 1px solid var(--fourth-color); */
+}
+
+.nav-link.active .fa {
+    color: var(--secondry-color);
 }
 
 /*=======================main-container======================*/
@@ -181,6 +190,7 @@ a {
     position: relative;
     overflow: hidden;
     background-color: var(--bgc-dark-main);
+    color: var(--text-color);
 }
 
 .page {
@@ -190,7 +200,7 @@ a {
     padding: 1rem;
     position: absolute;
     transition: 1s;
-    color: #ffffff;
+
 }
 
 /*=======================Home page======================*/
@@ -237,5 +247,69 @@ a {
 
 .home-left span {
     font-size: 28px;
-    color: var(--dark-orange);
+    color: var(--secondry-color);
+}
+
+/*=======================Theam======================*/
+.theam {
+    height: 30px;
+    width: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.theam button {
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    width: 35px;
+    color: var(--bgc-light-main);
+}
+
+.colorsTheam {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.colors {
+    height: 30px;
+    width: 150px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.colors .dark-pink {
+    background-color: #ff0084;
+}
+
+.colors .red {
+    background-color: red;
+}
+
+.colors .orange {
+    background-color: #f66b04;
+}
+
+.colors .green {
+    background-color: #2ddb2d;
+}
+
+.fa {
+    /* for all fa class */
+    color: var(--text-color);
 }
