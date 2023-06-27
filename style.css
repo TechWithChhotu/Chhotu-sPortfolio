@@ -23,13 +23,6 @@ body {
     /* royal blue */
     --secondry-color: #ff0084;
     /*dark-orange*/
-    --ternary-color: #ff0084;
-    /* dark-pink */
-    --fourth-color: #2ddb2d;
-    /* light green */
-    --fifth-color: rgb(255, 0, 0);
-
-    --yellow: #ffd700;
     --text-color: white;
 
     /*<=========BCG========>*/
@@ -108,9 +101,29 @@ a {
     bottom: 0;
 }
 
+/* .Grid-Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    place-items: center;
+    margin: 1rem auto;
+} */
 
+.btn {
+    border: none;
+    background-color: var(--secondry-color);
+    padding: 5px;
+    font-size: 20px;
+    margin: .8rem;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
+.btn:hover {
+    color: #9fa19d;
 
+}
 
 /*
 .=======================SEPARATE CSS======================
@@ -132,16 +145,18 @@ a {
 }
 
 .aside .logo a {
-    color: var(--secondry-color);
     font-weight: 700;
-    font-size: 20px;
     padding: 0 1rem;
+    color: var(--secondry-color);
 }
 
 .aside .logo {
+    font-size: 20px;
     position: relative;
     width: fit-content;
-    height: fit-content
+    height: fit-content;
+    color: var(--secondry-color);
+
 }
 
 .aside .conic-border::after,
@@ -154,8 +169,7 @@ a {
 
 .aside .logo a span {
     font-family: 'Pacifico', cursive;
-    font-size: 2rem;
-    /* color: var(--ternary-color); */
+    font-size: 1.8rem;
 }
 
 
@@ -188,22 +202,22 @@ a {
     height: 100vh;
     width: 100%;
     position: relative;
-    overflow: hidden;
     background-color: var(--bgc-dark-main);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 .page {
-    /* border: 3px solid rgb(20, 191, 206); */
-    height: 100%;
+    height: 100vh;
     width: 100%;
     padding: 1rem;
     position: absolute;
     transition: 1s;
-
 }
 
 /*=======================Home page======================*/
+
+
 .home-inner {
     display: flex;
     justify-content: space-around;
@@ -312,4 +326,159 @@ a {
 .fa {
     /* for all fa class */
     color: var(--text-color);
+}
+
+/*=======================About Section Design======================*/
+
+.about-section1 p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section1 span {
+    color: var(--secondry-color);
+    font-family: 'Allura', cursive;
+    font-size: 2rem;
+}
+
+.about-inner {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 19px;
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+
+.about-section2,
+.about-section3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-inner-me {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-size: 18px;
+    text-align: justify;
+}
+
+.skills {
+    width: 300px;
+}
+
+.skill {
+    width: 100%;
+    text-align: center;
+    margin: .8rem;
+
+    height: fit-content;
+    text-align: start;
+    position: relative;
+}
+
+.skill-inner {
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.html-css {
+    width: 99%;
+    background-color: var(--secondry-color);
+    height: 8px;
+}
+
+.js,
+.bootstrap {
+    width: 90%;
+    height: 8px;
+    background-color: var(--secondry-color);
+}
+
+.c-cpp {
+    width: 95%;
+    height: 8px;
+    background-color: var(--secondry-color);
+}
+
+.java {
+    width: 80%;
+    height: 8px;
+    background-color: var(--secondry-color);
+}
+
+.dsa {
+    width: 75%;
+    height: 8px;
+    background-color: var(--secondry-color);
+}
+
+
+.about-inner-Skills {
+    margin-top: 5rem;
+}
+
+.about-inner-personalInfo {
+    line-height: 2.5rem;
+}
+
+.about-inner-personalInfo span {
+    color: gray;
+}
+
+.about-section3 {
+    padding: 2rem 0;
+}
+
+/* List of education section design */
+.list-of-education {
+    border-left: 1px solid var(--secondry-color);
+    padding-left: 12.5px;
+    position: relative;
+
+}
+
+.edu-item {
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--text-color);
+
+}
+
+.edu-item::before {
+    content: '';
+    width: .6rem;
+    height: .6rem;
+    box-sizing: border-box;
+    position: absolute;
+    left: -.3rem;
+    border-radius: 50%;
+    background-color: var(--secondry-color);
+    margin-top: 0.5rem;
+}
+
+.Session {
+    font-size: 10px;
+}
+
+.course {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.NameOfinstitute,
+.TechnologiesUsed {
+    font-size: 14px;
+    color: gray;
 }
